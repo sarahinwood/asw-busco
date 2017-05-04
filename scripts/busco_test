@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export PATH="${HOME}/local/bin:${HOME}/local/bin/augustus/bin:${HOME}/local/bin/augustus/scripts:${PATH}"
+export AUGUSTUS_CONFIG_PATH="${HOME}/local/bin/augustus/config"
+
+python BUSCO.py --in sample_data/target.fa --out TEST --lineage sample_data/example --mode genome
